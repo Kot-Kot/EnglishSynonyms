@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">EnglishSynonyms</string>
+    <string name="synonyms_group_count">5</string>
+</resources>
