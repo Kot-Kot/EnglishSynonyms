@@ -1,11 +1,15 @@
 package com.example.kot.englishsynonyms;
 
+import android.content.Context;
+import android.graphics.Point;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.view.Display;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.WindowManager;
 import android.widget.TextView;
 
 /**
@@ -23,9 +27,24 @@ public class Fragment1 extends Fragment {
        // return super.onCreateView(inflater, container, savedInstanceState);
         View myRootView = inflater.inflate(R.layout.fragment1, container, false);
 
+        WindowManager myWM = (WindowManager) getContext().getSystemService(Context.WINDOW_SERVICE);
+        Display myDisplay = myWM.getDefaultDisplay();
+
+        Point mySize = new Point();
+        myDisplay.getSize(mySize);
+        int myWidth = mySize.x;
+        int myHeight = mySize.y;
+
+
         myTextViewForInfo1 = (TextView) myRootView.findViewById(R.id.textViewForInfo1);
         myTextViewForInfo2 = (TextView) myRootView.findViewById(R.id.textViewForInfo2);
         myTextViewForSynonym1 = (TextView) myRootView.findViewById(R.id.textViewForSynonym1);
+
+        myTextViewForSynonym1.setTextSize((float)(myHeight*0.02));
+
+
+
+
 
         return myRootView;
 
@@ -47,4 +66,5 @@ public class Fragment1 extends Fragment {
 
         }
     }
+
 }

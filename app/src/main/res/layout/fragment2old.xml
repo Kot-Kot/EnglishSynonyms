@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.kot.englishsynonyms.MainActivity"
+    >
+
+
+    <TextView
+        android:id="@+id/textViewForInfo3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+
+        android:background="@color/colorBlack"
+        android:ellipsize="marquee"
+
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+
+
+        android:marqueeRepeatLimit="marquee_forever"
+
+
+        android:paddingLeft="@dimen/some_padding"
+        android:paddingRight="@dimen/some_padding"
+        android:scrollHorizontally="true"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:text="TextView"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <Button
+        android:id="@+id/buttonVariant1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginLeft="8dp"
+
+        android:layout_marginRight="4dp"
+        android:layout_marginStart="8dp"
+        android:background="@color/colorButton"
+        android:maxLines="1"
+        android:text="1"
+        app:layout_constraintBottom_toTopOf="@+id/buttonVariant3"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/buttonVariant2" />
+
+    <Button
+        android:id="@+id/buttonVariant2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="4dp"
+
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="4dp"
+        android:background="@color/colorButton"
+        android:maxLines="1"
+        android:text="2"
+        app:layout_constraintBottom_toTopOf="@+id/buttonVariant4"
+        app:layout_constraintLeft_toRightOf="@+id/buttonVariant1"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <Button
+        android:id="@+id/buttonVariant3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+
+        android:layout_marginEnd="4dp"
+        android:layout_marginLeft="8dp"
+
+
+        android:layout_marginRight="4dp"
+        android:layout_marginStart="8dp"
+        android:background="@color/colorButton"
+        android:maxLines="1"
+        android:text="3"
+        app:layout_constraintBottom_toTopOf="@+id/textViewForInfo3"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/buttonVariant4" />
+
+    <Button
+        android:id="@+id/buttonVariant4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="4dp"
+
+
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="4dp"
+        android:background="@color/colorButton"
+        android:maxLines="1"
+        android:text="4"
+        app:layout_constraintBottom_toTopOf="@+id/textViewForInfo3"
+        app:layout_constraintLeft_toRightOf="@+id/buttonVariant3"
+        app:layout_constraintRight_toRightOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>

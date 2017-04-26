@@ -1,4 +1,8 @@
 <resources>
-    <string name="app_name">EnglishSynonyms</string>
-    <string name="synonyms_group_count">5</string>
+    <string name="translation_activity_name">Russian translation</string>
+    <string name="app_name">English Synonyms</string>
+    <string name="synonyms_group_count">36</string>
+    <string name="action_menu_next">Next</string>
+    <string name="action_menu_start">Start</string>
+    <string name="action_context_menu_translation">Show russian translation</string>
 </resources>

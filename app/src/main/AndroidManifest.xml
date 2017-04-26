@@ -16,7 +16,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".GameActivity"></activity>
+        <activity
+            android:name=".GameActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".TranslationActivity"
+            android:label="@string/translation_activity_name"
+            android:theme="@style/Theme.AppCompat.Light.Dialog">
+
+        </activity>
     </application>
 
 </manifest>
