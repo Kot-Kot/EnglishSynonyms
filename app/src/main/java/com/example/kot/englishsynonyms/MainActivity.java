@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.animation.AnimationUtils;
+import android.view.animation.RotateAnimation;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -13,7 +15,8 @@ public class MainActivity extends AppCompatActivity {
 
     Button myButtonStart;
     TextView myTestTV;
-
+    TextView myMainTV1;
+    TextView myMainTV2;
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu_main, menu);
@@ -46,6 +49,8 @@ public class MainActivity extends AppCompatActivity {
 
         myButtonStart = (Button) findViewById(R.id.buttonStart);
         myTestTV = (TextView) findViewById(R.id.textViewForTests);
+        myMainTV1 = (TextView) findViewById(R.id.textViewMain1);
+        myMainTV2 = (TextView) findViewById(R.id.textViewMain2);
 
 
         myButtonStart.setOnClickListener(new View.OnClickListener() {
@@ -55,8 +60,23 @@ public class MainActivity extends AppCompatActivity {
                 Intent myIntent = new Intent(getApplicationContext(), GameActivity.class);
                 startActivity(myIntent);
 
+
+
+
             }
         });
+
+        RotateAnimation myRotateAnimation1  = (RotateAnimation) AnimationUtils.loadAnimation
+                (getApplicationContext(), R.anim.rotate_animation1);
+
+        myMainTV1.setAnimation(myRotateAnimation1);
+
+        RotateAnimation myRotateAnimation2  = (RotateAnimation) AnimationUtils.loadAnimation
+                (getApplicationContext(), R.anim.rotate_animation2);
+
+        myMainTV2.setAnimation(myRotateAnimation2);
+
+
 
 
 

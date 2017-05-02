@@ -7,60 +7,75 @@
 
     tools:context="com.example.kot.englishsynonyms.GameActivity">
 
-
     <android.support.constraint.Guideline
-        android:id="@+id/guidelineH4"
+        android:id="@+id/guidelineH92"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.04"
-        tools:layout_editor_absoluteY="21dp"
+        app:layout_constraintGuide_percent="0.92"
+        tools:layout_editor_absoluteY="296dp"
         tools:layout_editor_absoluteX="0dp" />
 
 
     <android.support.constraint.Guideline
-        android:id="@+id/guidelineH60"
+        android:id="@+id/guidelineH87"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.6"
-        tools:layout_editor_absoluteY="358dp"
+        app:layout_constraintGuide_percent="0.87"
+        tools:layout_editor_absoluteY="280dp"
         tools:layout_editor_absoluteX="0dp" />
+
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guidelineV50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorBlack"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="296dp" />
 
     <TextView
         android:id="@+id/textViewForInfo1"
         android:layout_width="0dp"
         android:layout_height="0dp"
 
-        android:background="@color/colorMyTopPanel"
+        android:background="@color/colorBlack"
         android:gravity="left"
         android:paddingLeft="10dp"
         android:text="1"
 
         android:textColor="@color/colorWhite"
-        app:layout_constraintBottom_toTopOf="@+id/guidelineH4"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintHorizontal_weight="1"
+
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toLeftOf="@+id/textViewForInfo2"
 
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="@+id/guidelineH92" />
 
     <TextView
         android:id="@id/textViewForInfo2"
         android:layout_width="0dp"
         android:layout_height="0dp"
 
-        android:background="@color/colorMyTopPanel"
+        android:background="@color/colorBlack"
         android:gravity="right"
         android:paddingRight="10dp"
         android:text="2"
 
         android:textColor="@color/colorWhite"
-        app:layout_constraintBottom_toTopOf="@+id/guidelineH4"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toRightOf="@+id/textViewForInfo1"
-        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/guidelineV50"
 
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintHorizontal_weight="1"
+
+        app:layout_constraintTop_toTopOf="@+id/guidelineH92" />
 
     <TextView
         android:id="@+id/textViewForSynonym1"
@@ -75,19 +90,24 @@
 
         app:layout_constraintBottom_toTopOf="@+id/textViewForSynonym2"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/guidelineV50"
 
-        app:layout_constraintTop_toBottomOf="@+id/guidelineH4"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_chainStyle="spread_inside"
-        app:layout_constraintVertical_weight="1" />
+        app:layout_constraintVertical_weight="1"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
 
     <TextView
         android:id="@+id/textViewForSynonym2"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
 
+        android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
+
+        android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
 
         android:gravity="center"
@@ -95,7 +115,7 @@
 
         app:layout_constraintLeft_toLeftOf="parent"
 
-        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/guidelineV50"
         app:layout_constraintTop_toBottomOf="@+id/textViewForSynonym1"
         app:layout_constraintVertical_weight="1" />
 
@@ -103,52 +123,58 @@
         android:id="@+id/textViewForSynonym3"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
 
+        android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
+
+        android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
 
         android:gravity="center"
-
         app:layout_constraintBottom_toTopOf="@+id/textViewForSynonym4"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewForSynonym2"
 
+        app:layout_constraintRight_toLeftOf="@+id/guidelineV50"
+        app:layout_constraintTop_toBottomOf="@+id/textViewForSynonym2"
         app:layout_constraintVertical_weight="1" />
 
     <TextView
         android:id="@+id/textViewForSynonym4"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
 
+        android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
+
+        android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
 
         android:gravity="center"
-
         app:layout_constraintBottom_toTopOf="@+id/textViewForSynonym5"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewForSynonym3"
 
+        app:layout_constraintRight_toLeftOf="@+id/guidelineV50"
+        app:layout_constraintTop_toBottomOf="@+id/textViewForSynonym3"
         app:layout_constraintVertical_weight="1" />
 
     <TextView
         android:id="@+id/textViewForSynonym5"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
 
+        android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
+
+        android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
 
         android:gravity="center"
-
         app:layout_constraintBottom_toTopOf="@+id/textViewForSynonym6"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/guidelineV50"
         app:layout_constraintTop_toBottomOf="@+id/textViewForSynonym4"
         app:layout_constraintVertical_weight="1" />
 
@@ -158,18 +184,34 @@
         android:layout_height="0dp"
 
 
-        android:layout_marginBottom="0dp"
+        android:layout_marginEnd="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+
+
         android:layout_marginTop="8dp"
-
-
         android:gravity="center"
-        app:layout_constraintBottom_toTopOf="@+id/guidelineH60"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineH87"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/guidelineV50"
         app:layout_constraintTop_toBottomOf="@+id/textViewForSynonym5"
         app:layout_constraintVertical_weight="1" />
+
+
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+
+        android:background="@color/colorButton"
+        tools:layout_editor_absoluteY="8dp" />
+
 
 
 </android.support.constraint.ConstraintLayout>

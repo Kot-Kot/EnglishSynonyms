@@ -21,12 +21,12 @@ import android.widget.TextView;
 
 public class Fragment2 extends Fragment implements View.OnClickListener {
 
-    TextView myTextViewForInfo3;
+    private TextView myTextViewForInfo3;
 
-    Button myButtonVariant1;
-    Button myButtonVariant2;
-    Button myButtonVariant3;
-    Button myButtonVariant4;
+    private Button myButtonVariant1;
+    private Button myButtonVariant2;
+    private Button myButtonVariant3;
+    private Button myButtonVariant4;
 
     @Nullable
     @Override
@@ -39,7 +39,7 @@ public class Fragment2 extends Fragment implements View.OnClickListener {
         //width and height in px for specific display
 
         //Display myDisplay = getWindowManager().getDefaultDisplay();
-        WindowManager myWM = (WindowManager) getContext().getSystemService(Context.WINDOW_SERVICE);
+       /* WindowManager myWM = (WindowManager) getContext().getSystemService(Context.WINDOW_SERVICE);
          Display myDisplay = myWM.getDefaultDisplay();
 
          Point mySize = new Point();
@@ -47,7 +47,7 @@ public class Fragment2 extends Fragment implements View.OnClickListener {
         int myWidth = mySize.x;
         int myHeight = mySize.y;
         Log.d("MY_LOG", "myWidth = "+myWidth);
-        Log.d("MY_LOG", "myHeight = "+myHeight);
+        Log.d("MY_LOG", "myHeight = "+myHeight); */
 
 
         myButtonVariant1 = (Button) myRootView.findViewById(R.id.buttonVariant1);
@@ -73,7 +73,7 @@ public class Fragment2 extends Fragment implements View.OnClickListener {
       // myTextViewForInfo3.setText(String.valueOf(myWidth)+"  "+String.valueOf(myHeight)+"   "+
               // String.valueOf((float)(myHeight*0.02)));
 
-        Log.d("MY_LOG", "(float)(myHeight*0.02) = "+(float)(myHeight*0.02));
+
 
 
 
@@ -133,9 +133,9 @@ public class Fragment2 extends Fragment implements View.OnClickListener {
         return index;
     }
 
-    public interface OnSelectedButtonListener{void onButtonSelected(int ButtonIndex);
+    public interface OnSelectedButtonListener{
 
-
+        void onButtonSelected(int ButtonIndex);
 
     }
 }
