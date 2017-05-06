@@ -33,7 +33,7 @@
         android:layout_height="0dp"
 
         android:background="@color/colorMyTopPanel"
-        android:gravity="left"
+        android:gravity="left|center"
         android:paddingLeft="10dp"
         android:text="1"
 
@@ -51,7 +51,7 @@
         android:layout_height="0dp"
 
         android:background="@color/colorMyTopPanel"
-        android:gravity="right"
+        android:gravity="right|center"
         android:paddingRight="10dp"
         android:text="2"
 

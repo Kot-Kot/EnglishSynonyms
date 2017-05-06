@@ -22,6 +22,7 @@
 
 
         android:focusableInTouchMode="true"
+        android:gravity="center"
         android:marqueeRepeatLimit="marquee_forever"
         android:maxLines="1"
         android:paddingLeft="@dimen/some_padding"
@@ -29,12 +30,12 @@
         android:scrollHorizontally="true"
         android:singleLine="true"
         android:textColor="@color/colorWhite"
-        app:layout_constraintBottom_toBottomOf="parent"
 
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/guidelineH96"
-        app:layout_constraintHorizontal_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/guidelineH96" />
 
     <Button
         android:id="@+id/buttonVariant1"

@@ -27,13 +27,14 @@ public class Fragment2 extends Fragment implements View.OnClickListener {
     private Button myButtonVariant2;
     private Button myButtonVariant3;
     private Button myButtonVariant4;
+    private View myRootView;
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
         //return super.onCreateView(inflater, container, savedInstanceState);
-        View myRootView = inflater.inflate(R.layout.fragment2, container, false);
+        myRootView = inflater.inflate(R.layout.fragment2, container, false);
 
 
         //width and height in px for specific display
@@ -67,27 +68,17 @@ public class Fragment2 extends Fragment implements View.OnClickListener {
 
 
 
-        myTextViewForInfo3 = (TextView) myRootView.findViewById(R.id.textViewForInfo3);
+       // myTextViewForInfo3 = (TextView) myRootView.findViewById(R.id.textViewForInfo3);
 
 
       // myTextViewForInfo3.setText(String.valueOf(myWidth)+"  "+String.valueOf(myHeight)+"   "+
               // String.valueOf((float)(myHeight*0.02)));
 
 
-
-
-
-
-
-
-
         myButtonVariant1.setOnClickListener(this);
         myButtonVariant2.setOnClickListener(this);
         myButtonVariant3.setOnClickListener(this);
         myButtonVariant4.setOnClickListener(this);
-
-
-
 
         return myRootView;
 
@@ -97,8 +88,6 @@ public class Fragment2 extends Fragment implements View.OnClickListener {
     @Override
     public void onResume() {
         super.onResume();
-
-
 
     }
 

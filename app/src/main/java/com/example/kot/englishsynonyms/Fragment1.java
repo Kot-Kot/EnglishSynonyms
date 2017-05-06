@@ -31,24 +31,6 @@ public class Fragment1 extends Fragment {
        // return super.onCreateView(inflater, container, savedInstanceState);
         myRootView = inflater.inflate(R.layout.fragment1, container, false);
 
-        WindowManager myWM = (WindowManager) getContext().getSystemService(Context.WINDOW_SERVICE);
-        Display myDisplay = myWM.getDefaultDisplay();
-
-        Point mySize = new Point();
-        myDisplay.getSize(mySize);
-        int myWidth = mySize.x;
-        int myHeight = mySize.y;
-
-
-        myTextViewForInfo1 = (TextView) myRootView.findViewById(R.id.textViewForInfo1);
-        myTextViewForInfo2 = (TextView) myRootView.findViewById(R.id.textViewForInfo2);
-        myTextViewForSynonym1 = (TextView) myRootView.findViewById(R.id.textViewForSynonym1);
-
-       // myTextViewForSynonym1.setTextSize((float)(myHeight*0.02));
-       // Log.d("MY_LOG", "myTextViewForSynonym1.getHeight() = "+myTextViewForSynonym1.getHeight());
-
-
-
 
 
         return myRootView;
@@ -56,29 +38,6 @@ public class Fragment1 extends Fragment {
 
     }
 
-    @Override
-    public void onResume() {
-        super.onResume();
-       // myTextViewForSynonym1.setTextSize((float) (myTextViewForSynonym1.getMeasuredHeight()*0.7));
 
-       // Log.d("MY_LOG", "myTextViewForSynonym1.getMeasuredHeight() = "+myTextViewForSynonym1.getMeasuredHeight());
-    }
-/*
-    public void setText (int buttonIndex){
-        switch (buttonIndex){
-            case 1:
-                break;
-            case 2:
-                break;
-            case 3:
-                break;
-            case 4:
-                break;
-            default:
-                break;
-
-        }
-    }
-    */
 
 }

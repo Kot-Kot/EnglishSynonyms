@@ -26,8 +26,9 @@
         android:ellipsize="marquee"
         android:focusable="true"
         android:focusableInTouchMode="true"
-        android:marqueeRepeatLimit="marquee_forever"
+        android:gravity="center"
 
+        android:marqueeRepeatLimit="marquee_forever"
         android:maxLines="1"
         android:paddingLeft="@dimen/some_padding"
         android:paddingRight="@dimen/some_padding"

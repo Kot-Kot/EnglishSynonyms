@@ -28,13 +28,15 @@ public class myDialogFragment extends DialogFragment {
        // return super.onCreateDialog(savedInstanceState);
         final AlertDialog.Builder myADB = new AlertDialog.Builder(getActivity());
         myADB.setTitle("Informational message.")
-                .setMessage("Sorry, you've watched all the groups." +
+                .setMessage("Sorry, you've watched all the groups. " +
                         "All the counters will be reset, but You will be able to start app from scratch.")
                 .setIcon(R.drawable.ic_priority_high_black_24dp)
-                .setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+                .setCancelable(false)
+                .setPositiveButton("OK", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         ((GameActivity) getActivity()).okClickedDialog();
+
 
                        /* GameActivity myGA = new GameActivity();
                         myGA.myFinishedGroupCounter = 0;
