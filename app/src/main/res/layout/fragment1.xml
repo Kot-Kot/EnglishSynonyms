@@ -90,11 +90,12 @@
         android:layout_marginRight="8dp"
         android:layout_marginTop="8dp"
 
+        android:enabled="false"
         android:gravity="center"
+
         app:layout_constraintBottom_toTopOf="@+id/textViewForSynonym3"
 
         app:layout_constraintLeft_toLeftOf="parent"
-
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewForSynonym1"
         app:layout_constraintVertical_weight="1" />
@@ -108,13 +109,14 @@
         android:layout_marginRight="8dp"
         android:layout_marginTop="8dp"
 
-        android:gravity="center"
+        android:enabled="false"
 
+        android:gravity="center"
         app:layout_constraintBottom_toTopOf="@+id/textViewForSynonym4"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewForSynonym2"
 
+        app:layout_constraintTop_toBottomOf="@+id/textViewForSynonym2"
         app:layout_constraintVertical_weight="1" />
 
     <TextView
@@ -126,13 +128,14 @@
         android:layout_marginRight="8dp"
         android:layout_marginTop="8dp"
 
-        android:gravity="center"
+        android:enabled="false"
 
+        android:gravity="center"
         app:layout_constraintBottom_toTopOf="@+id/textViewForSynonym5"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewForSynonym3"
 
+        app:layout_constraintTop_toBottomOf="@+id/textViewForSynonym3"
         app:layout_constraintVertical_weight="1" />
 
     <TextView
@@ -144,8 +147,9 @@
         android:layout_marginRight="8dp"
         android:layout_marginTop="8dp"
 
-        android:gravity="center"
+        android:enabled="false"
 
+        android:gravity="center"
         app:layout_constraintBottom_toTopOf="@+id/textViewForSynonym6"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -164,6 +168,7 @@
         android:layout_marginTop="8dp"
 
 
+        android:enabled="false"
         android:gravity="center"
         app:layout_constraintBottom_toTopOf="@+id/guidelineH60"
         app:layout_constraintLeft_toLeftOf="parent"
