@@ -177,19 +177,20 @@ public class GameActivity extends AppCompatActivity implements Fragment2.OnSelec
 
 
         isQuitDialogOnTop = true;
-        myQuitDialog.setMessage("Do you want to quit from the Game?\n" +
-                "You will lose all your progress for current group,\n" +
-                "but your general progress (up to the first word in the current group) will be saved.");
-        myQuitDialog.setTitle("Informational message.");
+        //myQuitDialog.setMessage("Do you want to quit from the Game?\n" +
+                //"You will lose all your progress for current group,\n" +
+                //"but your general progress (up to the first word in the current group) will be saved.");
+        myQuitDialog.setMessage(R.string.game_activity_quit_dialog_message);
+        myQuitDialog.setTitle(R.string.game_activity_dialog_title);
         myQuitDialog.setCancelable(false);
-        myQuitDialog.setPositiveButton("YES", new DialogInterface.OnClickListener() {
+        myQuitDialog.setPositiveButton(R.string.game_activity_dialog_posbutton, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 isQuitDialogOnTop = false;
                 finish();
             }
         });
-        myQuitDialog.setNegativeButton("NO", new DialogInterface.OnClickListener() {
+        myQuitDialog.setNegativeButton(R.string.game_activity_dialog_negbutton, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
 
@@ -656,7 +657,7 @@ public class GameActivity extends AppCompatActivity implements Fragment2.OnSelec
             myBundle.putString(KEY_myTVInfo3InFragment2, myTVInfo3InFragment2.getText().toString());
 
 
-            myTVInfo1InFragment1.setText("Score: " + myTotalScore);
+            myTVInfo1InFragment1.setText(getResources().getString(R.string.game_activity_score)+ " : " + myTotalScore);
             myBundle.putString(KEY_myTVInfo1InFragment1, myTVInfo1InFragment1.getText().toString());
             myBundle.putInt(KEY_myTotalScore, myTotalScore);
         }
@@ -765,11 +766,11 @@ public class GameActivity extends AppCompatActivity implements Fragment2.OnSelec
 
 
         //TextView myTVInfo1InFragment1 = (TextView) myFragment1.getView().findViewById(R.id.textViewForInfo1);
-        myTVInfo1InFragment1.setText("Score: " + myTotalScore);
+        myTVInfo1InFragment1.setText(getResources().getString(R.string.game_activity_score)+ " : " + myTotalScore);
         myBundle.putString(KEY_myTVInfo1InFragment1, myTVInfo1InFragment1.getText().toString());
 
             // TextView myTVInfo2InFragment1 = (TextView) myFragment1.getView().findViewById(R.id.textViewForInfo2);
-        myTVInfo2InFragment1.setText("Current Group #: " + myCurrentGroupNumber);
+        myTVInfo2InFragment1.setText(getResources().getString(R.string.game_activity_current_group) + " #: " + myCurrentGroupNumber);
         myBundle.putString(KEY_myTVInfo2InFragment1, myTVInfo2InFragment1.getText().toString());
 
             // myFragment1 = getSupportFragmentManager().findFragmentById(R.id.fragment1);

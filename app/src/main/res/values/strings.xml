@@ -6,5 +6,21 @@
     <string name="action_menu_start">Start</string>
     <string name="action_context_menu_translation">Show russian translation</string>
 
+    <string name="main_activity_word1">English</string>
+    <string name="main_activity_word2">synonyms</string>
+
+    <string name="game_activity_score">Score</string>
+    <string name="game_activity_current_group">Current Group</string>
+
+
+    <string name="game_activity_dialog_posbutton">YES</string>
+    <string name="game_activity_dialog_negbutton">NO</string>
+    <string name="game_activity_dialog_title">Informational message.</string>
+
+
+    <string name="game_activity_quit_dialog_message">Do you want to quit from the Game?\nYou will lose all your progress for current group,\nbut your general progress (up to the first word in the current group) will be saved.</string>
+
+
+    <string name="game_activity_gameover_dialog_message">Sorry, you have watched all the groups.\nAll the counters will be reset, but You will be able to start app from scratch.</string>
 
 </resources>

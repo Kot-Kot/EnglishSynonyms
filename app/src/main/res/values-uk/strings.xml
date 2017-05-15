@@ -1,0 +1,25 @@
+<resources>
+    <string name="translation_activity_name">Русский перевод</string>
+    <string name="app_name">Английские синонимы</string>
+    <string name="synonyms_group_count">76</string>
+    <string name="action_menu_next">Далее</string>
+    <string name="action_menu_start">Старт</string>
+    <string name="action_context_menu_translation">Показать русский перевод</string>
+
+    <string name="main_activity_word1">Английские</string>
+    <string name="main_activity_word2">синонимы</string>
+
+    <string name="game_activity_score">Счет</string>
+    <string name="game_activity_current_group">Текущая группа</string>
+
+
+    <string name="game_activity_dialog_posbutton">ДА</string>
+    <string name="game_activity_dialog_negbutton">НЕТ</string>
+    <string name="game_activity_dialog_title">Информационное сообщение.</string>
+
+    <string name="game_activity_quit_dialog_message">Хотите выйти из игры?\nВесь прогресс в текущей группе будет потерян.\nОбщий прогресс будет сохранен.</string>
+
+
+    <string name="game_activity_gameover_dialog_message">Вы просмотрели все группы синонимов.\nВсе счетчики будут обнулены. Но вы сможете начать игру заново.</string>
+
+</resources>
